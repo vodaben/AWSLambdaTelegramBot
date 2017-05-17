@@ -24,6 +24,9 @@ exports.handler = (event, context, callback) => {
         g_channel = channel;
         let bot = new TelegramBot(g_token);
 
+        // @TODO To do something you want.
+        // e.g. Sending message to channel/person
+
         for(let i = 0; i < event.Records.length; i++){
             let record = event.Records[i];
             if(record.Sns && record.Sns.Message){
